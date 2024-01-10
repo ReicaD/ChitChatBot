@@ -79,7 +79,10 @@ const handleSubmit = async (e) => {
   chatContainer.scrollTop = chatContainer.scrollHeight;
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
-  console.log("form data",data)
+
+  //fetching data from server
+  
+  // console.log("form data",data)
 };
 form.addEventListener("submit", handleSubmit);
 form.addEventListener("keyup", (e) => {
